@@ -1,43 +1,3 @@
-// import {
-//   Table,
-//   TableBody,
-//   TableCaption,
-//   TableCell,
-//   TableHead,
-//   TableHeader,
-//   TableRow,
-// } from "@/components/ui/table"
-
-
-
-// export default function Home() {
-//   return (
-//     <main className="flex min-h-screen flex-col max-w-4xl mx-auto p-8">
-//       <h1 className="text-3xl font-bold mb-4">Plastic Chemicals Tests</h1>
-
-//       <Table>
-//         <TableCaption>A list of your recent invoices.</TableCaption>
-//         <TableHeader>
-//           <TableRow>
-//             <TableHead className="w-[100px]">Invoice</TableHead>
-//             <TableHead>Status</TableHead>
-//             <TableHead>Method</TableHead>
-//             <TableHead className="text-right">Amount</TableHead>
-//           </TableRow>
-//         </TableHeader>
-//         <TableBody>
-//           <TableRow>
-//             <TableCell className="font-medium">INV001</TableCell>
-//             <TableCell>Paid</TableCell>
-//             <TableCell>Credit Card</TableCell>
-//             <TableCell className="text-right">$250.00</TableCell>
-//           </TableRow>
-//         </TableBody>
-//       </Table>
-
-//     </main>
-//   );
-// }
 "use client"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -98,7 +58,7 @@ export default function Home() {
       }
     } catch (error) {
       console.error("Error submitting email:", error);
-      alert("An error occurred while subscribing email. Please try again.");
+      alert("An error occurred while submitting email. Please try again.");
     }
   }
 
