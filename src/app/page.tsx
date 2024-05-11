@@ -107,6 +107,7 @@ export default function Home() {
         </form>
       </Form>
       <Table>
+        <TableCaption>Example of what results may look like. Taken from <a href="https://www.consumerreports.org/health/food-contaminants/the-plastic-chemicals-hiding-in-your-food-a7358224781/" target="_blank" rel="noopener noreferrer" className="underline">consumerreports.org</a>.</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[150px]">Category</TableHead>
