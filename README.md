@@ -34,6 +34,14 @@ from twitter:
   - Plastics are widely used, directly and indirectly, in production, processing, and packaging of almost all food.
   - Plastics are also found in clothes, toys, furniture, receipts, household dust, and probably many more things.
 - There are thousands of plastics that fall into many different groups. Some may be more harmful than others.
+  - Plasticizers - make plastic more flexible and durable
+    - Phthalates - most common plasticizers
+      - DEHP - one of the most well-studied phthalates. Linked to insulin resistance, high blood pressure, reproductive issues, early menopause, and other concerns at levels well below the limits set by American and European regulators. [Source](https://www.consumerreports.org/health/food-contaminants/the-plastic-chemicals-hiding-in-your-food-a7358224781/)
+        - https://publications.aap.org/pediatrics/article-abstract/132/3/e646/31508/Urinary-Phthalates-and-Increased-Insulin?redirectedFrom=fulltext?autologincheck=redirected
+        - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3747269/
+        - https://www.sciencedirect.com/science/article/pii/S0304389423009639?via%3Dihub
+        - https://ehjournal.biomedcentral.com/articles/10.1186/s12940-021-00799-8
+  - Bisphenols - other chemicals found in plastic
 - We do not know what "safe levels" are, or if they even exist. It is likely that plastics are harmful at very low levels.
   - https://ehjournal.biomedcentral.com/articles/10.1186/s12940-021-00799-8
 - American and European regulators are aware that plastics are harmful, but the limits they set on the use of plastics do not reflect the most current scientific knowledge and are dangerously high.
