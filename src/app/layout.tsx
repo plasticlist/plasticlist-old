@@ -10,19 +10,19 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "Plastic Chemicals Tests",
-  description: "We are finding out how much plastic US consumers eat every day.",
+  title: "PlasticList",
+  description: "Figure out what plastic chemicals are in your food.",
   metadataBase: new URL('https://plasticlist.vercel.app/'),
   openGraph: {
-    title: "Plastic Chemicals Tests",
-    description: "We are finding out how much plastic US consumers eat every day.",
+    title: "PlasticList",
+    description: "Figure out what plastic chemicals are in your food.",
     url: "https://plasticlist.vercel.app/",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Plastic Chemicals Tests",
+        alt: "PlasticList",
       },
     ],
   },

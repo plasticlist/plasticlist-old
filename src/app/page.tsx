@@ -174,7 +174,7 @@ type YourFormValuesType = {
   
   return (
     <main className="flex min-h-screen flex-col max-w-4xl mx-auto p-8">
-      <h1 className="text-3xl font-bold">Plastic Chemicals Tests</h1>
+      <h1 className="text-3xl font-bold">PlasticList</h1>
       <Form {...form}>
         <form onSubmit={handleSubmit(onSubmit)} className="my-4 space-y-6 flex justify-between items-end">
           <div className="flex justify-between items-center w-full">
@@ -192,23 +192,12 @@ type YourFormValuesType = {
       </Form>
 
       <Table>
-        <TableCaption>
-          Filtered results based on your search. Taken from{" "}
-          <a href="https://www.consumerreports.org/health/food-contaminants/the-plastic-chemicals-hiding-in-your-food-a7358224781/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline" }}>
-            consumerreports.org
-          </a>.
-        </TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead>Category</TableHead><TableHead>Product</TableHead><TableHead>Total phthalates per serving (nanograms)</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {filteredData.map((item, index) => (
-            <TableRow key={index}>
-              <TableCell>{item.category}</TableCell><TableCell>{item.product}</TableCell><TableCell>{item.phthalates.toLocaleString()}</TableCell> {/* Add the formatting here */}
-            </TableRow>
-          ))}
         </TableBody>
       </Table>
     </main>
