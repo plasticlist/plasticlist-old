@@ -13,7 +13,13 @@ Inspired by [Nat Friedman's tweet](https://twitter.com/natfriedman/status/178928
 
 ### Collecting questions
 - phthalates, bisphenols, PFAS, plastics, teflon - how are all of these related / mapped, what do we know about how dangerous / safe they are.
+- most of our knowledge comes from studies. what makes a good study? c.f. [beware the man of one study](https://slatestarcodex.com/2014/12/12/beware-the-man-of-one-study/)
+- how do they enter and leave our bodies.
+- what happens when they are in our bodies.
 - bans on PFAS, what do they mean.
 - EPA banned PFAS starting in 2025. but it's likely there are similar chemicals that can be used to circumvent the ban. what is the root of the problem and how do we attack it?
 from twitter:
 - for those of us that ultimately can't rid ourselves of plastic packaging for a lot of our food sources, what levels of phthalates per serving should we be targeting?
+
+# research notes
+
