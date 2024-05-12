@@ -23,6 +23,8 @@ from twitter:
 
 ### research notes
 
+#### Plastics
+
 - Almost all of us have plastics in our bodies.
   - https://ehp.niehs.nih.gov/doi/10.1289/ehp.1306681
 - It is likely that plastics kill us. The process is likely slow but cumulative.
@@ -37,6 +39,8 @@ from twitter:
 - American and European regulators are aware that plastics are harmful, but the limits they set on the use of plastics do not reflect the most current scientific knowledge and are dangerously high.
   - https://ehjournal.biomedcentral.com/articles/10.1186/s12940-021-00799-8
 - Human body is good at eliminating at least some plastics (bisphenols and phthalates) from our systems. But because we are constantly exposed to plastics, we have them in our bodies at most times.
+
+#### Asbestos use and elimination as case study
 
 
 
