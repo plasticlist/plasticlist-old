@@ -4,8 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useWatch } from "react-hook-form";
 import { z, ZodTypeAny } from "zod";
-import { SubmitHandler } from "react-hook-form";
-
 
 
 import { Button } from "@/components/ui/button";
@@ -32,22 +30,6 @@ const formSchema = z.object({
   search: z.string().optional(),
 });
 
-const Home = () => {
-  const { handleSubmit, register, control, reset } = useForm({
-    resolver: zodResolver(formSchema), // Use formSchema here
-    defaultValues: {
-      email: "",
-      search: ""
-    },
-  });
-
-const form = useForm({
-  resolver: zodResolver(formSchema),
-  defaultValues: {
-    email: "",
-    search: ""
-  },
-});
 
 const DATA = [
   { category: "Infant Food", product: "Gerber Cereal for Baby Rice (plastic)", phthalates: 1599 },
@@ -131,20 +113,25 @@ const DATA = [
   { category: "Seafood", product: "Costco Wholesale Frozen Tilapia Fillets (plastic)", phthalates: 950 }
 ];
 
-type YourFormValuesType = {
-  email: string;
-  search: string;
-};
 
+export default function Home() {
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: "",
+      search: ""
+    },
+  });
 
   const [filteredData, setFilteredData] = useState(DATA);
-  const search = useWatch({ control, name: "search" });
+  const search = useWatch({ control: form.control, name: "search" });
 
   useEffect(() => {
     const newFilteredData = search ? DATA.filter(item => item.product.toLowerCase().includes(search.toLowerCase())) : DATA;
     setFilteredData(newFilteredData);
   }, [search]);
-  const onSubmit: SubmitHandler<{ email: string; search: string; }> = async (values) => {
+
+  const onSubmit = async (values) => {
     try {
       const response = await fetch("/api/subscribe", {
         method: "POST",
@@ -155,16 +142,11 @@ type YourFormValuesType = {
       });
   
       if (response.ok) {
-        const responseData = await response.json(); // Ensure you can parse JSON safely
+        form.reset();  // Resets the form fields after successful submission
         alert("Email submitted successfully!");
-        form.reset(); // Resets the form fields after successful submission
       } else {
-        if(response.headers.get("content-type")?.includes("application/json")) {
-          const errorData = await response.json(); // Safely parse JSON only if response is JSON
-          alert(`Error: ${errorData.error || 'Failed to subscribe'}`);
-        } else {
-          alert("Failed to subscribe - Server responded with a non-JSON error message.");
-        }
+        const errorData = await response.json();  // Assuming the server responds with JSON-formatted error messages
+        alert(`Error: ${errorData.error || 'Failed to subscribe'}`);
       }
     } catch (error) {
       console.error("Error submitting email:", error);
@@ -176,37 +158,44 @@ type YourFormValuesType = {
     <main className="flex min-h-screen flex-col max-w-4xl mx-auto p-8">
       <h1 className="text-3xl font-bold">Plastic Chemicals Tests</h1>
       <Form {...form}>
-        <form onSubmit={handleSubmit(onSubmit)} className="my-4 space-y-6 flex justify-between items-end">
-          <div className="flex justify-between items-center w-full">
-            <div className="flex gap-2">
-              <FormControl>
-                <Input type="email" placeholder="name@example.com" {...register("email")} />
-              </FormControl>
-              <Button type="submit">Submit</Button>
-            </div>
-            <FormControl style={{ width: '300px' }}>
-              <Input type="text" placeholder="Search..." {...register("search")} />
-            </FormControl>
-          </div>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="my-4 space-y-6 flex justify-between items-end">
+          
+      <div className="flex justify-between items-center w-full">
+  <div className="flex gap-2">
+    <FormControl>
+      <Input type="email" placeholder="name@example.com" {...form.register("email")} />
+    </FormControl>
+    <Button type="submit">Submit</Button>
+  </div>
+  <FormControl style={{ width: '300px' }}>
+    <Input type="text" placeholder="Search..." {...form.register("search")} />
+  </FormControl>
+</div>
+
         </form>
       </Form>
 
       <Table>
-        <TableCaption>
-          Filtered results based on your search. Taken from{" "}
-          <a href="https://www.consumerreports.org/health/food-contaminants/the-plastic-chemicals-hiding-in-your-food-a7358224781/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline" }}>
-            consumerreports.org
-          </a>.
-        </TableCaption>
+        
+      <TableCaption>
+  Filtered results based on your search. Taken from{" "}
+  <a href="https://www.consumerreports.org/health/food-contaminants/the-plastic-chemicals-hiding-in-your-food-a7358224781/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline" }}>
+    consumerreports.org
+  </a>.
+</TableCaption>
         <TableHeader>
           <TableRow>
-            <TableHead>Category</TableHead><TableHead>Product</TableHead><TableHead>Total phthalates per serving (nanograms)</TableHead>
+            <TableHead>Category</TableHead>
+            <TableHead>Product</TableHead>
+            <TableHead>Total phthalates per serving (nanograms)</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {filteredData.map((item, index) => (
             <TableRow key={index}>
-              <TableCell>{item.category}</TableCell><TableCell>{item.product}</TableCell><TableCell>{item.phthalates.toLocaleString()}</TableCell> {/* Add the formatting here */}
+              <TableCell>{item.category}</TableCell>
+              <TableCell>{item.product}</TableCell>
+              <TableCell>{item.phthalates}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -214,5 +203,3 @@ type YourFormValuesType = {
     </main>
   );
 }
-
-export default Home;
