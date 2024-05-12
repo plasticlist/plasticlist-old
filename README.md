@@ -24,13 +24,13 @@ from twitter:
 ### research notes
 
 - Almost all of us have plastics in our bodies.
--   https://ehp.niehs.nih.gov/doi/10.1289/ehp.1306681
+  - https://ehp.niehs.nih.gov/doi/10.1289/ehp.1306681
 - It is likely that plastics kill us. The process is likely slow but cumulative.
--   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10038118/
--   https://www.endocrine.org/topics/edc/plastics-edcs-and-health
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10038118/
+  - https://www.endocrine.org/topics/edc/plastics-edcs-and-health
 - You likely cannot stop consuming plastics, because they are everywhere.
--   Plastics are widely used, directly and indirectly, in production, processing, and packaging of food.
--   Plastics are also found in clothes, toys, furniture, receipts, household dust, and probably many more things.
+  - Plastics are widely used, directly and indirectly, in production, processing, and packaging of food.
+  - Plastics are also found in clothes, toys, furniture, receipts, household dust, and probably many more things.
 - There are thousands of plastics that fall into many different groups. Some may be more harmful than others.
 - We do not know what "safe levels" are, or if they even exist.
 
