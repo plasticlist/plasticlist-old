@@ -23,7 +23,7 @@ from twitter:
 
 ### research notes
 
-most recent version [here](https://docs.google.com/document/d/1v3HA__onIw1rE5yav2QExESfr_cHWNDVjibc5qYQCUo/edit?usp=sharing)
+most recent version [here](https://docs.google.com/document/d/16tqUGBFfs4Hlon1bVxEbA6fIUm6pC-d1ba2wV8E2Vhk/edit?usp=sharing)
 
 #### Plastics
 
