@@ -21,5 +21,5 @@ Inspired by [Nat Friedman's tweet](https://twitter.com/natfriedman/status/178928
 from twitter:
 - for those of us that ultimately can't rid ourselves of plastic packaging for a lot of our food sources, what levels of phthalates per serving should we be targeting?
 
-# research notes
+### research notes
 
