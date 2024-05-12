@@ -64,7 +64,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col max-w-4xl mx-auto p-8">
-      <h1 className="text-3xl font-bold">Plastic Chemicals Tests</h1>
+      <h1 className="text-3xl font-bold">PlasticList</h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="my-4 space-y-6 max-w-sm">
           <FormField
