@@ -23,6 +23,8 @@ from twitter:
 
 ### research notes
 
+most recent version [here](https://docs.google.com/document/d/1v3HA__onIw1rE5yav2QExESfr_cHWNDVjibc5qYQCUo/edit?usp=sharing)
+
 #### Plastics
 
 - Almost all of us have plastics in our bodies.
