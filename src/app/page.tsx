@@ -86,7 +86,6 @@ export default function Home() {
         </form>
       </Form>
       <Table>
-        <TableCaption>Example of what results may look like. Taken from <a href="https://www.consumerreports.org/health/food-contaminants/the-plastic-chemicals-hiding-in-your-food-a7358224781/" target="_blank" rel="noopener noreferrer" className="underline">consumerreports.org</a>.</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-[150px]">Category</TableHead>
@@ -96,39 +95,29 @@ export default function Home() {
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell className="font-medium">Infant Food</TableCell>
-            <TableCell>Gerber Mealtime for Baby Harvest Turkey Dinner (glass with lined lid)</TableCell>
-            <TableCell className="text-right">4,267</TableCell>
+            <TableCell className="font-medium">Coming soon</TableCell>
+            <TableCell>Coming soon</TableCell>
+            <TableCell className="text-right">5,123</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium">Infant Food</TableCell>
-            <TableCell>Similac Advance Infant Milk-Based Powder Formula (can)</TableCell>
-            <TableCell className="text-right">4,202</TableCell>
+            <TableCell className="font-medium">Coming soon</TableCell>
+            <TableCell>Coming soon</TableCell>
+            <TableCell className="text-right">4,123</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium">Infant Food</TableCell>
-            <TableCell>Beech-Nut Fruities Pouch Pear, Banana & Raspberries (pouch)</TableCell>
-            <TableCell className="text-right">2,826</TableCell>
+            <TableCell className="font-medium">Coming soon</TableCell>
+            <TableCell>Coming soon</TableCell>
+            <TableCell className="text-right">3,123</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium">Infant Food</TableCell>
-            <TableCell>Gerber Cereal for Baby Rice (plastic)</TableCell>
-            <TableCell className="text-right">1,599</TableCell>
+            <TableCell className="font-medium">Coming soon</TableCell>
+            <TableCell>Coming soon</TableCell>
+            <TableCell className="text-right">2,123</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium">Infant Food</TableCell>
-            <TableCell>Happy Baby Organics Clearly Crafted Banana & Strawberries (glass with lined lid)</TableCell>
-            <TableCell className="text-right">1,300</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell className="font-medium">Infant Food</TableCell>
-            <TableCell>Happy Baby Organic Milk-Based Infant Powder Formula With Iron (plastic)</TableCell>
-            <TableCell className="text-right">977</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell className="font-medium">Infant Food</TableCell>
-            <TableCell>Gerber Organic for Baby Pouch Apple Zucchini Spinach Strawberry (pouch)</TableCell>
-            <TableCell className="text-right">706</TableCell>
+            <TableCell className="font-medium">Coming soon</TableCell>
+            <TableCell>Coming soon</TableCell>
+            <TableCell className="text-right">1,123</TableCell>
           </TableRow>
         </TableBody>
       </Table>
