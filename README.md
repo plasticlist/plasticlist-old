@@ -1,4 +1,4 @@
-# Plasticlist
+# PlasticList
 
 Plastic Chemicals Tests
 
