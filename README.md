@@ -29,10 +29,14 @@ from twitter:
   - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10038118/
   - https://www.endocrine.org/topics/edc/plastics-edcs-and-health
 - You likely cannot stop consuming plastics, because they are everywhere.
-  - Plastics are widely used, directly and indirectly, in production, processing, and packaging of food.
+  - Plastics are widely used, directly and indirectly, in production, processing, and packaging of almost all food.
   - Plastics are also found in clothes, toys, furniture, receipts, household dust, and probably many more things.
 - There are thousands of plastics that fall into many different groups. Some may be more harmful than others.
-- We do not know what "safe levels" are, or if they even exist.
+- We do not know what "safe levels" are, or if they even exist. It is likely that plastics are harmful at very low levels.
+  - https://ehjournal.biomedcentral.com/articles/10.1186/s12940-021-00799-8
+- American and European regulators are aware that plastics are harmful, but the limits they set on the use of plastics do not reflect the most current scientific knowledge and are dangerously high.
+  - https://ehjournal.biomedcentral.com/articles/10.1186/s12940-021-00799-8
+- Human body is good at eliminating at least some plastics (bisphenols and phthalates) from our systems. But because we are constantly exposed to plastics, we have them in our bodies at most times.
 
 
 
