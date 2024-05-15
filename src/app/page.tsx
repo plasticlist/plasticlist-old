@@ -1,90 +1,16 @@
 "use client"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
 
-import { Button } from "@/components/ui/button"
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-
-const formSchema = z.object({
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-})
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { SubscribeEmailForm } from "@/components/subscribe-email-form"
+import { IntroText } from "@/components/intro-text"
 
 export default function Home() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      email: "",
-    },
-  })
-
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    try {
-      const response = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: values.email }),
-      });
-
-      if (response.ok) {
-        form.reset();
-        alert("Email submitted successfully!");
-      } else {
-        const errorData = await response.json();
-        alert(`Error: ${errorData.error}`);
-      }
-    } catch (error) {
-      console.error("Error submitting email:", error);
-      alert("An error occurred while submitting email. Please try again.");
-    }
-  }
 
   return (
-    <main className="flex min-h-screen flex-col max-w-4xl mx-auto p-8">
+    <main className="flex min-h-screen flex-col max-w-4xl mx-auto gap-8 p-8">
       <h1 className="text-3xl font-bold">PlasticList</h1>
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="my-4 space-y-6 max-w-sm">
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field: { ...field } }) => (
-              <FormItem>
-                <FormLabel>Subscribe to updates</FormLabel>
-                <div className="flex gap-4">
-                  <FormControl>
-                    <Input type="email" placeholder="name@example.com" {...field} />
-                  </FormControl>
-                  <Button type="submit">Submit</Button>
-                </div>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </form>
-      </Form>
+      <IntroText />
+      <SubscribeEmailForm />
       <Table>
         <TableHeader>
           <TableRow>
