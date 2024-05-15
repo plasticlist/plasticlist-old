@@ -22,7 +22,11 @@ const formSchema = z.object({
   }),
 })
 
-export function SubscribeEmailForm() {
+type SubscribeEmailFormProps = {
+  onSubmitSuccess?: (email: string) => void;
+};
+
+export function SubscribeEmailForm({ onSubmitSuccess }: SubscribeEmailFormProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -42,7 +46,10 @@ export function SubscribeEmailForm() {
 
       if (response.ok) {
         form.reset();
-        toast.success("Email submitted successfully!");
+        toast.success("Email submitted successfully");
+        if (onSubmitSuccess) {
+          onSubmitSuccess(values.email);
+        }
       } else {
         const errorData = await response.json();
         toast.error(`Error: ${errorData.error}`);
@@ -61,10 +68,10 @@ export function SubscribeEmailForm() {
           name="email"
           render={({ field: { ...field } }) => (
             <FormItem>
-              <FormLabel>Enter your email to be notified of test results</FormLabel>
-              <div className="flex gap-4">
+              <FormLabel>Enter your email to be notified of updates</FormLabel>
+              <div className="flex gap-2">
                 <FormControl>
-                  <Input type="email" placeholder="name@example.com" {...field} />
+                  <Input type="email" placeholder="Your email" {...field} />
                 </FormControl>
                 <Toaster />
                 <Button type="submit">Submit</Button>

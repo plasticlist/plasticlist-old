@@ -1,6 +1,7 @@
 "use client"
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { SubscribeEmailForm } from "@/components/subscribe-email-form"
 
 const OverlayTrigger = ({ children, content }: { children: React.ReactNode, content: React.ReactNode }) => (
   <>
@@ -19,7 +20,11 @@ const OverlayTrigger = ({ children, content }: { children: React.ReactNode, cont
   </>
 )
 
-export function IntroText() {
+type IntroTextProps = {
+  onEmailSubmit: (email: string) => void;
+};
+
+export function IntroText({ onEmailSubmit }: IntroTextProps) {
   return (
     <TooltipProvider delayDuration={100}>
       <div className="space-y-4">
@@ -123,17 +128,20 @@ export function IntroText() {
           </OverlayTrigger>
           {" "}may have the most chemicals in their bodies.
         </p>
-        <p>
-          Nat Friedman is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find plastic chemicals in food, drinks, and household items.
-        </p>
-        <p>
-          <b>PlasticList</b> is a searchable database that lets you follow the results of Nat's tests.
-        </p>
-        <ul className="list-disc pl-5">
-          <li>Get real-time updates as soon as test results are published.</li>
-          <li>Search products by name, brand, or category.</li>
-          <li>If a product has chemicals, we will explain what this means for you.</li>
-        </ul>
+        <div className="border bg-secondary p-4 rounded-md flex flex-col gap-4">
+          <p>
+            Nat Friedman is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find plastic chemicals in food, drinks, and household items.
+          </p>
+          <p>
+            <b>PlasticList</b> is a searchable database that lets you follow the results of Nat's tests.
+          </p>
+          <ul className="list-disc pl-5">
+            <li>Get real-time updates as soon as test results are published.</li>
+            <li>Search products by name, brand, or category.</li>
+            <li>If a product has chemicals, we will explain what this means for you.</li>
+          </ul>
+          <SubscribeEmailForm onSubmitSuccess={onEmailSubmit} />
+        </div>
         <p>
           We are not affiliated with Nat as of now. If you know Nat and would like to put us in touch, you can forward this{" "}
           <OverlayTrigger
