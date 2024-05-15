@@ -148,7 +148,6 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
         },
         body: JSON.stringify({ items: values.items, email: values.email }),
       });
-      suggestionForm.reset();
       setSuggestionSubmitted(true);
       onEmailSubmit(values.email); // Call onEmailSubmit with the submitted email
     } catch (error) {
@@ -156,6 +155,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
       toast.error("An error occurred while submitting the suggestion. Please try again.");
     }
   };
+
 
   return (
     <div className="flex flex-col gap-2">
@@ -299,7 +299,9 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
                   <p className="text-sm text-muted-foreground">We will notify you about the results</p>
                 </div>
                 <DialogFooter>
-                  <Button type="submit">Submit</Button>
+                  <Button type="submit" disabled={suggestionForm.formState.isSubmitting}>
+                    {suggestionForm.formState.isSubmitting ? 'Submitting...' : 'Submit'}
+                  </Button>
                 </DialogFooter>
               </form>
             </Form>
