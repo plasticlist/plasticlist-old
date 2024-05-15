@@ -61,7 +61,7 @@ export function SubscribeEmailForm() {
           name="email"
           render={({ field: { ...field } }) => (
             <FormItem>
-              <FormLabel>Subscribe to updates</FormLabel>
+              <FormLabel>Enter your email to be notified of test results</FormLabel>
               <div className="flex gap-4">
                 <FormControl>
                   <Input type="email" placeholder="name@example.com" {...field} />
