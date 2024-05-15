@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { SubscribeEmailForm } from "@/components/subscribe-email-form";
 import { useEffect } from "react";
-import { Label } from "@radix-ui/react-label";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -41,7 +40,53 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
 
   const rows = [
     { "category": "Water", "item": "Tap water", "phthalates": "TBD", "bisphenols": "TBD" },
-    { "category": "Water", "item": "Bottled water from different types of plastic bottles", "phthalates": "TBD", "bisphenols": "TBD" }
+    { "category": "Water", "item": "Bottled water from different types of plastic bottles", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Bottled water from glass bottles", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Water after sitting in Nalgene bottle", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Water after sitting in cheap plastic bottle", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Water after sitting in glass bottle", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Water after sitting in sippy cup", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Water from Brita filter", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Food Storage", "item": "Food wrapped in cellophane", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Food Storage", "item": "Food wrapped in plastic bags", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Food Storage", "item": "Food microwaved in different containers", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Beverages", "item": "Starbucks drink in plastic lid", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Beverages", "item": "Hydro flask for hot drink", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Beverages", "item": "Hydro flask for cold drink", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Baby Food", "item": "Annie’s baby food", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Snacks", "item": "Veggie sticks", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Meat", "item": "Grass-fed beef", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Meat", "item": "Grain-fed beef", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Non-processed Foods", "item": "Non-processed foods from groceries", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Water in non-BPA 5-gallon plastic", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Super filtered tap water", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Water in glass bottles", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Beverages", "item": "Fruit or energy drinks", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Other items", "item": "Plastic straws", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Beverages", "item": "Super soft tea bags", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Utensils", "item": "Reusable chopsticks", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Meat", "item": "Organic chicken", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Meat", "item": "Cage-free chicken", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Meat", "item": "Non-organic chicken", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Oils", "item": "Seed oils", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Oils", "item": "Olive oils", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Milk", "item": "Soy milk", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Milk", "item": "Regular milk", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Milk", "item": "Organic milk", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Meat", "item": "Regular chicken breast", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Milk", "item": "Almond milk", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Snacks", "item": "Powdered peanut butter", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Other items", "item": "Test for PFAS, especially in dairy products", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Other items", "item": "Solo cups with water", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Mountain Valley spring water in glass bottles", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Beverages", "item": "Coffee", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Ice Cream", "item": "Salt & Straw ice cream", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Other items", "item": "Machine-milked cow milk in glass bottles", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Other items", "item": "Raw milk directly from a cow", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Water", "item": "Bottled water left in a hot car", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Milk", "item": "Raw milk", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Milk", "item": "Pasteurized milk", "phthalates": "TBD", "bisphenols": "TBD" },
+    { "category": "Baby Food", "item": "Baby/kids food", "phthalates": "TBD", "bisphenols": "TBD" }
   ];
 
   const filteredRows = rows.filter((item) =>
