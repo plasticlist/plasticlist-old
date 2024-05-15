@@ -138,7 +138,7 @@ export function IntroText() {
           We are not affiliated with Nat as of now. If you know Nat and would like to put us in touch, you can forward this{" "}
           <OverlayTrigger
             content={
-              <p>Hey Nat,<br /><br /><a href="https://plasticlist.app" className="text-blue-500">plasticlist.app</a> is building a database of your tests for plastic. They want to work with you.<br /><br />If interesting, send them an email at <a href="mailto:yaroslav@theslavant.com" className="text-blue-500">yaroslav@theslavant.com</a>.</p>
+              <p>Hey Nat,<br /><br /><a href="https://plasticlist.app" className="text-blue-500">plasticlist.app</a> is building a database of your tests for plastic. They want to work with you.<br /><br />If interesting, send them an email at <a href="mailto:team@plasticlist.app" className="text-blue-500">team@plasticlist.app</a>.</p>
             }
           >
             short blurb
