@@ -59,7 +59,7 @@ export function IntroText() {
               <br />
               <p>Among them are plasticizers like phthalates, fame retardants, bisphenols, PFAS, and their substitutes.</p>
               <br />
-              <p>For some of these chemicals, we know they are harmful. For many others, we haven’t checked.</p>
+              <p>For some of these chemicals, we know they are harmful. For many others, no one has checked yet.</p>
             </TooltipContent>
           </Tooltip>
           {" "}added to plastic end up inside us and likely{" "}
