@@ -176,8 +176,8 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px] text-left">Vote</TableHead>
-            <TableHead className="w-[150px]">Category</TableHead>
             <TableHead>Item</TableHead>
+            <TableHead className="w-[150px]">Category</TableHead>
             <TableHead className="w-[100px] text-right">
               Phthalates
             </TableHead>
@@ -202,8 +202,8 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
                   {votedItems.includes(item.item) ? "VOTED" : "VOTE"}
                 </Button>
               </TableCell>
-              <TableCell className="font-medium">{item.category}</TableCell>
               <TableCell>{item.item}</TableCell>
+              <TableCell className="font-medium">{item.category}</TableCell>
               <TableCell className="text-right">{item.phthalates}</TableCell>
               <TableCell className="text-right">{item.bisphenols}</TableCell>
             </TableRow>
