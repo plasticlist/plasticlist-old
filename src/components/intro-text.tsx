@@ -108,8 +108,13 @@ export function IntroText() {
           Nat Friedman is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find plastic chemicals in food, drinks, and household items.
         </p>
         <p>
-          PlasticList will build a searchable database of Nat’s results. You will be able to find products with the fewest chemicals. If a product has chemicals, we will explain what this means for you.
+          <b>PlasticList</b> will build a searchable database of Nat’s results.
         </p>
+        <ul className="list-disc pl-5">
+          <li>Get real-time updates as soon as test results are published.</li>
+          <li>Search products by name, brand, or category.</li>
+          <li>If a product has chemicals, we will explain what this means for you.</li>
+        </ul>
         <p>
           Leave your email to be notified when we add test results.
         </p>
