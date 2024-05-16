@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://www.plasticlist.app/",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "PlasticList",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     creator: "@TheSlavant",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         alt: "PlasticList",
       },
     ],
