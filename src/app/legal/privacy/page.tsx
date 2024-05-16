@@ -9,7 +9,7 @@ export default function TermsPage() {
         <h1 className="text-lg font-bold">Privacy</h1>
         <p>Website Privacy Policy</p>
         <p>Last updated: May 15, 2024</p>
-        <p>PLEASE READ THIS WEBSITE'S PRIVACY POLICY ("PRIVACY POLICY") CAREFULLY BEFORE USING THIS WEBSITE.</p>
+        <p>PLEASE READ THIS WEBSITE ("Site") PRIVACY POLICY ("Privacy Policy") CAREFULLY BEFORE USING THIS WEBSITE.</p>
         <p>
           1. Information We Collect<br />
           Personal Data<br />

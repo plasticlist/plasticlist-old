@@ -9,7 +9,7 @@ export default function TermsPage() {
         <h1 className="text-lg font-bold">Terms</h1>
         <p>Website Terms of Use</p>
         <p>Last updated: May 15, 2024</p>
-        <p>PLEASE READ THIS WEBSITE'S TERMS OF USE ("TERMS OF USE") CAREFULLY BEFORE USING THIS WEBSITE.</p>
+        <p>PLEASE READ THIS WEBSITE TERMS OF USE ("Terms of Use") CAREFULLY BEFORE USING THIS WEBSITE.</p>
         <p>1. Agreement<br />
           By using this website (the "Site"), you are agreeing to be bound by the terms and conditions contained in these Terms of Use. If you do not agree with any of these terms, please do not use our Site.</p>
         <p>2. Intellectual Property Rights<br />
