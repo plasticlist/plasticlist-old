@@ -12,7 +12,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "PlasticList",
   description: "Figure out what plastic chemicals are in your food.",
-  metadataBase: new URL('https://www.plasticlist.app/'),
+  metadataBase: new URL('https://plasticlist.app/'),
   twitter: {
     card: "summary_large_image",
     title: "PlasticList",
