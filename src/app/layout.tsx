@@ -12,16 +12,28 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "PlasticList",
   description: "Figure out what plastic chemicals are in your food.",
-  metadataBase: new URL('https://plasticlist.vercel.app/'),
+  metadataBase: new URL('https://www.plasticlist.app/'),
   openGraph: {
     title: "PlasticList",
-    description: "Figure out what plastic chemicals are in your food.",
-    url: "https://plasticlist.vercel.app/",
+    description: "Find out what plastic chemicals are in your food.",
+    url: "https://www.plasticlist.app/",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
+        alt: "PlasticList",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PlasticList",
+    description: "Find out what plastic chemicals are in your food.",
+    creator: "@TheSlavant",
+    images: [
+      {
+        url: "/og-image.svg",
         alt: "PlasticList",
       },
     ],
