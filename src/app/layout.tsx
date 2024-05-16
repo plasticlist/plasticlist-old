@@ -13,6 +13,19 @@ export const metadata: Metadata = {
   title: "PlasticList",
   description: "Figure out what plastic chemicals are in your food.",
   metadataBase: new URL('https://plasticlist.app/'),
+  openGraph: {
+    title: "PlasticList",
+    description: "Find out what plastic chemicals are in your food.",
+    url: "https://plasticlist.app/",
+    images: [
+      {
+        url: "https://plasticlist.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PlasticList",
+      },
+    ],
+  },
   twitter: {
     card: "summary_large_image",
     title: "PlasticList",
@@ -20,7 +33,7 @@ export const metadata: Metadata = {
     creator: "@TheSlavant",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://plasticlist.app/og-image.png",
         alt: "PlasticList",
       },
     ],
