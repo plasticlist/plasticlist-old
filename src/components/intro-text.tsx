@@ -37,7 +37,7 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
           <ul className="list-disc pl-5">
             <li><b>Today:</b> add or upvote things you want tested for chemicals.</li>
             <li><b>Next week:</b> access interactive research summaries.</li>
-            <li><b>Soon:</b> analyze Nat's findings, get a template to petition your rep, find links to research grants, and more.</li>
+            <li><b>Soon:</b> analyze Nat's findings, find links to research grants, get a template to petition your rep, and more.</li>
           </ul>
           <SubscribeEmailForm onSubmitSuccess={onEmailSubmit} />
         </div>

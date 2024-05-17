@@ -85,9 +85,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
     { "name": "Plastic Cosmetic Containers", "brand": "Revlon", "category": "Beauty", "packaging_type": "Set" },
     { "name": "Plastic Makeup Brushes", "brand": "Real Techniques", "category": "Beauty", "packaging_type": "Set" },
     { "name": "Almond Milk", "brand": "Almond Breeze", "category": "Beverage", "packaging_type": "Carton" },
-    { "name": "Sparkling Water", "brand": "LaCroix", "category": "Beverage", "packaging_type": "Can" },
     { "name": "Ground Coffee", "brand": "Peet's Coffee", "category": "Beverage", "packaging_type": "Bag" },
-    { "name": "Coconut Water", "brand": "Vita Coco", "category": "Beverage", "packaging_type": "Carton" },
     { "name": "Cashew Milk", "brand": "Silk", "category": "Beverage", "packaging_type": "Carton" },
     { "name": "Orange Juice", "brand": "Tropicana", "category": "Beverage", "packaging_type": "Carton" },
     { "name": "Sparkling Juice", "brand": "Spindrift", "category": "Beverage", "packaging_type": "Can" },
@@ -491,17 +489,21 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">Vote</TableHead>
-            <TableHead className="min-w-[200px]">Name</TableHead>
-            <TableHead className="w-[100px]">Brand</TableHead>
             <TableHead className="w-[100px]">Category</TableHead>
+            <TableHead className="min-w-[200px]">Name</TableHead>
+            <TableHead className="w-[150px]">Brand</TableHead>
             <TableHead className="w-[100px]">Packaging</TableHead>
+            <TableHead className="w-[100px]">Test priority</TableHead>
             <TableHead className="w-[100px]">Test results</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {filteredRows.map((item, index) => (
             <TableRow key={index}>
+              <TableCell className="font-medium">{item.category}</TableCell>
+              <TableCell>{item.name}</TableCell>
+              <TableCell className="">{item.brand}</TableCell>
+              <TableCell className="">{item.packaging_type}</TableCell>
               <TableCell className="text-left">
                 <Button
                   onClick={() => handleVote(item.name)}
@@ -515,10 +517,6 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
                   {votedItems.includes(item.name) ? "VOTED" : "VOTE"}
                 </Button>
               </TableCell>
-              <TableCell>{item.name}</TableCell>
-              <TableCell className="font-medium">{item.brand}</TableCell>
-              <TableCell className="">{item.category}</TableCell>
-              <TableCell className="">{item.packaging_type}</TableCell>
               <TableCell className="text-left">
                 <Button className="h-7 rounded-none bg-secondary text-secondary-foreground hover:bg-blue-600 hover:text-background" onClick={() => handleNotify()}>Notify me</Button>
               </TableCell>
