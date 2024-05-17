@@ -126,7 +126,7 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
           This may have{" "}
           <OverlayTrigger
             content={
-              <p><a href="https://pubmed.ncbi.nlm.nih.gov/17003688/" className="text-blue-500">Hauser et al. (2006)</a> found that a plastic chemical may be altering semen quality in men. Concentrations of the chemical were associated with decreased sperm concentration and motility.</p>
+              <p><a href="https://pubmed.ncbi.nlm.nih.gov/17003688/" className="text-blue-500">Hauser et al. (2006)</a> found that a plastic chemical alters semen quality in men. Concentrations of the chemical were associated with decreased sperm concentration and motility.</p>
             }
           >
             society-level effects
