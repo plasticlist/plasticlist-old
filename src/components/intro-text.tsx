@@ -46,9 +46,9 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
               </>
             }
           >
-            eat plastic
+            eat
           </OverlayTrigger>
-          {" "}every day. We also{" "}
+          ,{" "}
           <OverlayTrigger
             content={
               <>
@@ -58,9 +58,9 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
               </>
             }
           >
-            drink it
+            drink
           </OverlayTrigger>
-          {" "}and{" "}
+          , and{" "}
           <OverlayTrigger
             content={
               <>
@@ -70,11 +70,32 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
               </>
             }
           >
-            inhale it
+            inhale
           </OverlayTrigger>
-          .
+          {" "}plastic every day. Especially{" "}
+          <OverlayTrigger
+            content={
+              <>
+                <p><a href="https://pubmed.ncbi.nlm.nih.gov/14762970/" className="text-blue-500">Koch et al. (2004)</a> found that nursery school children have twice the internal exposure to a plastic chemical called DEHP compared to their parents and teachers.</p>
+                <br />
+                <p><a href="https://sproutsanfrancisco.com/get-educated/test-banned-dehp-phthalates/" className="text-blue-500">Sprout San Francisco (2018)</a> found that all their children had DEHP in their systems, with higher levels in 6- and 8-year-olds compared to 12-year-old.</p>
+                <br />
+                <p><a href="https://pubmed.ncbi.nlm.nih.gov/16466535/" className="text-blue-500">Koch et al. (2006)</a> found that premature newborns in Germany had DEHP exposure levels up to 100 times above safety limits, primarily due to intensive medical care involving DEHP-containing devices.</p>
+              </>
+            }
+          >
+            small children.
+          </OverlayTrigger>
         </p>
         <p>
+          <OverlayTrigger
+            content={
+              <p><a href="https://ehp.niehs.nih.gov/doi/10.1289/ehp.1306681" className="text-blue-500">The National Health and Nutrition Examination Survey (2001–2010)</a> found that at least 98% of participants had plastic chemicals called phthalates in their systems, with children having higher levels than adults.</p>
+            }
+          >
+            Emergent research
+          </OverlayTrigger>
+          {" "}shows that{" "}
           <OverlayTrigger
             content={
               <>
@@ -86,9 +107,9 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
               </>
             }
           >
-            Chemicals
+            chemicals
           </OverlayTrigger>
-          {" "}added to plastic end up inside us and likely{" "}
+          {" "}added to plastic end up inside us and{" "}
           <OverlayTrigger
             content={
               <p><a href="https://www.endocrine.org/-/media/endosociety/files/advocacy-and-outreach/important-documents/introduction-to-endocrine-disrupting-chemicals.pdf#page=22" className="text-blue-500">The Endocrine Society (2014)</a> summarized studies showing that plastic chemicals are linked to neurological and behavioral disorders, obesity, metabolic dysfunction, reproductive disorders, and hormone-sensitive cancers.</p>
@@ -96,7 +117,10 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
           >
             make us sick
           </OverlayTrigger>
-          . This may have{" "}
+          .
+        </p>
+        <p>
+          This may have{" "}
           <OverlayTrigger
             content={
               <p><a href="https://pubmed.ncbi.nlm.nih.gov/17003688/" className="text-blue-500">Hauser et al. (2006)</a> found that a plastic chemical may be altering semen quality in men. Concentrations of the chemical were associated with decreased sperm concentration and motility.</p>
@@ -104,42 +128,21 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
           >
             society-level effects
           </OverlayTrigger>
-          .
-        </p>
-        <p>
-          <OverlayTrigger
-            content={
-              <>
-                <p><a href="https://pubmed.ncbi.nlm.nih.gov/14762970/" className="text-blue-500">Koch et al. (2004)</a> found that nursery school children have twice the internal exposure to a plastic chemical called DEHP compared to their parents and teachers.</p>
-                <br />
-                <p><a href="https://sproutsanfrancisco.com/get-educated/test-banned-dehp-phthalates/" className="text-blue-500">Sprout San Francisco (2018)</a> found that all their children had DEHP in their systems, with higher levels in 6- and 8-year-olds compared to 12-year-old.</p>
-              </>
-            }
-          >
-            Children
-          </OverlayTrigger>
-          {" "}and{" "}
-          <OverlayTrigger
-            content={
-              <p><a href="https://pubmed.ncbi.nlm.nih.gov/16466535/" className="text-blue-500">Koch et al. (2006)</a> found that premature newborns in Germany had DEHP exposure levels up to 100 times above safety limits, primarily due to intensive medical care involving DEHP-containing devices.</p>
-            }
-          >
-            infants
-          </OverlayTrigger>
-          {" "}may have the most chemicals in their bodies.
+          {" "}that we attribute to other things.
         </p>
         <div className="border bg-secondary p-4 rounded-md flex flex-col gap-4">
           <p>
             Nat Friedman is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find plastic chemicals in food, drinks, and household items.
           </p>
-          <p>
-            <b>PlasticList</b> is a searchable database that lets you follow the results of Nat's tests.
-          </p>
-          <ul className="list-disc pl-5">
-            <li>Get real-time updates as soon as test results are published.</li>
-            <li>Search products by name, brand, or category.</li>
-            <li>If a product has chemicals, we will explain what this means for you.</li>
-          </ul>
+          <div>
+            <p><b>PlasticList</b> is the interface to add and upvote products to test. We will:</p>
+            <ul className="list-disc pl-5">
+              <li>Send your requests to Nat.</li>
+              <li>Notify you when the findings are published.</li>
+              <li>If a product has chemicals, explain what it means.</li>
+            </ul>
+          </div>
+          <p>We will add a searchable database of the findings, a template to petition your rep, links to research grants, and more.</p>
           <SubscribeEmailForm onSubmitSuccess={onEmailSubmit} />
         </div>
         <p>
