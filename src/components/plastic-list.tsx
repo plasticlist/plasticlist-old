@@ -217,7 +217,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
         <TableHeader>
           <TableRow>
             <TableHead className="w-[100px]">Vote</TableHead>
-            <TableHead>Item</TableHead>
+            <TableHead className="min-w-[200px]">Item</TableHead>
             <TableHead className="w-[100px]">Category</TableHead>
             <TableHead className="w-[100px]">Test results</TableHead>
           </TableRow>
