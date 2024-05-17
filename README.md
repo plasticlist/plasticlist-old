@@ -6,6 +6,8 @@ Nat Friedman [announced testing](https://twitter.com/natfriedman/status/17892874
 
 In turn, we built PlasticList: an open-source UI for Nat's tests. To start, we are launching a database of all popular food, drink, and household products in CA, so you can upvote items to test first.
 
+You can see the UI here: [PlasticList](https://www.plasticlist.app/)
+
 ## Why This Matters
 
 Emerging research shows that plastic chemicals are inside all of us and can affect sperm quality, fertility, and cancer risk. The scale is vast and growing. 
