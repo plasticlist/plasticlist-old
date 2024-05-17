@@ -72,7 +72,7 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
           >
             inhale
           </OverlayTrigger>
-          {" "}plastic every day. Especially{" "}
+          {" "}plastic every day. Even{" "}
           <OverlayTrigger
             content={
               <>
