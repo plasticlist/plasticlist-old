@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css"
 import { Inter as FontSans } from "next/font/google"
+import { CSPostHogProvider } from './providers'
 
 import { cn } from "@/lib/utils"
 
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
+      <CSPostHogProvider>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased text-sm",
@@ -56,6 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         {children}
       </body>
+      </CSPostHogProvider>
     </html>
   )
 }
