@@ -41,17 +41,6 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
           </ul>
           <SubscribeEmailForm onSubmitSuccess={onEmailSubmit} />
         </div>
-        <p>
-          As of today, we are not affiliated with Nat. If you know Nat and would like to put us in touch, you can forward this{" "}
-          <OverlayTrigger
-            content={
-              <p>Hey Nat,<br /><br /><a href="https://plasticlist.app" className="text-blue-500">plasticlist.app</a> is building a database of your tests for plastic. They want to work with you.<br /><br />If interesting, send them an email at <a href="mailto:team@plasticlist.app" className="text-blue-500">team@plasticlist.app</a>.</p>
-            }
-          >
-            short blurb
-          </OverlayTrigger>
-          .
-        </p>
       </div>
     </TooltipProvider>
   )
