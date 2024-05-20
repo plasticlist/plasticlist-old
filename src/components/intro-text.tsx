@@ -2,6 +2,7 @@
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { SubscribeEmailForm } from "@/components/subscribe-email-form"
+import { ResearchSummary } from "@/components/research-summary"
 
 const OverlayTrigger = ({ children, content }: { children: React.ReactNode, content: React.ReactNode }) => (
   <>
@@ -28,6 +29,7 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
   return (
     <TooltipProvider delayDuration={100}>
       <div className="space-y-4">
+        <ResearchSummary />
         <div className="border bg-secondary p-4 rounded-md flex flex-col gap-4">
           <p>
             Nat Friedman is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find plastic chemicals in food, drinks, and household items.
