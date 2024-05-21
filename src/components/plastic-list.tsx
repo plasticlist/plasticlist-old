@@ -444,6 +444,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
     setSuggestEmail("");
     setSuggestionSubmitted(false);
     setNumItems(1);
+    suggestionForm.reset();
   };
 
   const suggestionForm = useForm<z.infer<typeof suggestionFormSchema>>({
@@ -476,7 +477,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
     <div className="flex flex-col gap-2">
       <div className="flex justify-end">
         <Button variant="outline" onClick={() => setIsSuggestDialogOpen(true)} className="mr-2">
-          Suggest products
+          Suggest things to test
         </Button>
         <Input
           type="text"
@@ -502,9 +503,9 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
             <TableRow key={index}>
               <TableCell className="font-medium">{item.category}</TableCell>
               <TableCell>{item.name}</TableCell>
-              <TableCell className="">{item.brand}</TableCell>
-              <TableCell className="">{item.packaging_type}</TableCell>
-              <TableCell className="text-left">
+              <TableCell>{item.brand}</TableCell>
+              <TableCell>{item.packaging_type}</TableCell>
+              <TableCell className="text-center">
                 <Button
                   onClick={() => handleVote(item.name)}
                   disabled={votedItems.includes(item.name)}
@@ -544,11 +545,17 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
       <Dialog open={isSuggestDialogOpen} onOpenChange={handleSuggestDialogClose}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Suggest products to test</DialogTitle>
+            <DialogTitle>Suggest things to test</DialogTitle>
           </DialogHeader>
           {!suggestionSubmitted ? (
             <Form {...suggestionForm}>
               <form onSubmit={suggestionForm.handleSubmit(handleSuggestSubmit)} className="flex flex-col gap-2">
+                <div className="text-sm text-muted-foreground">
+                  <ul className="ml-4 list-disc flex flex-col gap-1">
+                    <li>Add a product to test (e.g., Ben & Jerry's ice cream in pint cartons) or an idea (e.g., water left in a car for 1 hr on a hot vs cold day).</li>
+                    <li>If the item is already on the list, vote for it instead.</li>
+                  </ul>
+                </div>
                 {[...Array(numItems)].map((_, index) => (
                   <FormField
                     key={index}
@@ -560,7 +567,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
                           <div className="relative">
                             <Input
                               {...field}
-                              placeholder="e.g. Ben & Jerry's ice cream in pint cartons"
+                              placeholder="Enter a product or idea"
                               className="col-span-3"
                               maxLength={70}
                             />
@@ -588,23 +595,16 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
                     Add another item
                   </Button>
                 )}
-                <div className="text-sm text-muted-foreground">
-                  <ul className="ml-4 list-disc flex flex-col gap-1">
-                    <li>Check if item is already on the list - if yes, vote instead</li>
-                    <li>Enter name, brand, category, and packaging type</li>
-                  </ul>
-                </div>
                 <FormField
                   control={suggestionForm.control}
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
                           type="email"
-                          placeholder="Your email"
+                          placeholder="Enter your email for updates"
                           className="col-span-3"
                         />
                       </FormControl>
@@ -612,9 +612,6 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
                     </FormItem>
                   )}
                 />
-                <div>
-                  <p className="text-sm text-muted-foreground">We will notify you about the results</p>
-                </div>
                 <DialogFooter>
                   <Button type="submit" disabled={suggestionForm.formState.isSubmitting}>
                     {suggestionForm.formState.isSubmitting ? 'Submitting...' : 'Submit'}
@@ -623,7 +620,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
               </form>
             </Form>
           ) : (
-            <p className="py-4 text-center text-md">Thanks! We received your vote and will update the list soon.</p>
+            <p className="py-4 text-center text-md">Thanks! We will update the list soon.</p>
           )}
         </DialogContent>
       </Dialog>

@@ -68,10 +68,9 @@ export function SubscribeEmailForm({ onSubmitSuccess }: SubscribeEmailFormProps)
           name="email"
           render={({ field: { ...field } }) => (
             <FormItem>
-              <FormLabel>Enter your email to be notified of updates</FormLabel>
               <div className="flex gap-2">
                 <FormControl>
-                  <Input type="email" placeholder="Your email" {...field} />
+                  <Input type="email" placeholder="Enter your email for updates" {...field} />
                 </FormControl>
                 <Toaster />
                 <Button type="submit">Submit</Button>
