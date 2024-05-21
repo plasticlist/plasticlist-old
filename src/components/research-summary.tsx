@@ -25,7 +25,7 @@ export function ResearchSummary() {
       <p>
         <OverlayTrigger
           content={
-            <p><a href="https://ehp.niehs.nih.gov/doi/10.1289/ehp.1306681" className="text-blue-500">The National Health and Nutrition Examination Survey (2001–2010)</a> found that at least 98% of participants had plastic chemicals called phthalates in their systems, with children having higher levels than adults.</p>
+            <p><a href="https://ehp.niehs.nih.gov/doi/10.1289/ehp.1306681" target="_blank" rel="noopener noreferrer" className="text-blue-500">The National Health and Nutrition Examination Survey (2001–2010)</a> found that at least 98% of participants had plastic chemicals called phthalates in their systems, with children having higher levels than adults.</p>
           }
         >
           Almost all
