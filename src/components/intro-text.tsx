@@ -31,16 +31,10 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
       <div className="space-y-4">
         <ResearchSummary />
         <div className="border bg-secondary p-4 rounded-md flex flex-col gap-4">
-          <p>
-            Nat Friedman is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find plastic chemicals in food, drinks, and household items.
-          </p>
-          <p><b>PlasticList</b> is an interactive UI for Nat's tests.</p>
-          <p>To start, we are launching a database of all popular food, drink, and household products in CA, so you can upvote items to test first.</p>
-          <ul className="list-disc pl-5">
-            <li><b>Today:</b> add or upvote things you want tested for chemicals.</li>
-            <li><b>Next week:</b> access interactive research summaries.</li>
-            <li><b>Soon:</b> analyze Nat's findings, find links to research grants, get a template to petition your rep, and more.</li>
-          </ul>
+          <div className="flex flex-col gap-2">
+            <p><b>Plasticlist</b> is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find out how much plastic chemicals are in the food, drinks, and household items we consume.</p>
+            <p>Go ahead and tell us what products we should test. It may be something you eat regularly or use in your home. Simply vote or add an item below.</p>
+          </div>
           <SubscribeEmailForm onSubmitSuccess={onEmailSubmit} />
         </div>
       </div>

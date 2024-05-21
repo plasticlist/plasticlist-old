@@ -502,9 +502,9 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
             <TableRow key={index}>
               <TableCell className="font-medium">{item.category}</TableCell>
               <TableCell>{item.name}</TableCell>
-              <TableCell className="">{item.brand}</TableCell>
-              <TableCell className="">{item.packaging_type}</TableCell>
-              <TableCell className="text-left">
+              <TableCell>{item.brand}</TableCell>
+              <TableCell>{item.packaging_type}</TableCell>
+              <TableCell className="text-center">
                 <Button
                   onClick={() => handleVote(item.name)}
                   disabled={votedItems.includes(item.name)}
