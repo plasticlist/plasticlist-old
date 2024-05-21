@@ -444,6 +444,7 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
     setSuggestEmail("");
     setSuggestionSubmitted(false);
     setNumItems(1);
+    suggestionForm.reset();
   };
 
   const suggestionForm = useForm<z.infer<typeof suggestionFormSchema>>({
