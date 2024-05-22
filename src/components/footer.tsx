@@ -5,7 +5,7 @@ export function Footer() {
       <div className="flex gap-4">
         <a href="/legal/terms" className="">Terms</a>
         <a href="/legal/privacy" className="">Privacy</a>
-        <a href="mailto:team@plasticlist.app" className="">Contact</a>
+        <a href="mailto:team@plasticlist.org" className="">Contact</a>
       </div>
     </footer>
   );
