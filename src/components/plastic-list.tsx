@@ -667,12 +667,12 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-1/6 sm:w-2/12">Category</TableHead>
-            <TableHead className="w-2/6 sm:w-3/12">Name</TableHead>
-            <TableHead className="w-1/6 sm:w-2/12">Brand</TableHead>
-            <TableHead className="w-1/6 sm:w-2/12">Packaging</TableHead>
-            <TableHead className="w-1/6 sm:w-1/12 text-center">Priority</TableHead>
-            <TableHead className="w-1/6 sm:w-2/12 text-center">Test results</TableHead>
+            <TableHead className="w-32">Category</TableHead>
+            <TableHead className="w-60">Name</TableHead>
+            <TableHead className="w-32">Brand</TableHead>
+            <TableHead className="w-32">Packaging</TableHead>
+            <TableHead className="w-20 text-center">Priority</TableHead>
+            <TableHead className="w-32 text-center">Test results</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
