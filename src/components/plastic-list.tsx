@@ -668,9 +668,8 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
       { "name": "Baby Food Pouches", "brand": "", "category": "Baby Food", "packaging_type": "Plastic" },
       { "name": "Water Bottle", "brand": "", "category": "Water Bottles", "packaging_type": "Plastic" },
       { "name": "Enfamil Baby Formula", "brand": "Enfamil", "category": "Baby Food", "packaging_type": "Metal" },
-      { "name": "Shibuya", "brand": "", "category": "Unknown", "packaging_type": "Unknown" },
       { "name": "McDonald's Big Mac", "brand": "McDonald's", "category": "Fast Food", "packaging_type": "Paper" },
-      { "name": "Koia", "brand": "", "category": "Unknown", "packaging_type": "Unknown" },
+      { "name": "Koia Protein Shake", "brand": "Koia", "category": "Protein", "packaging_type": "Plastic" },
       { "name": "Dole Bananas", "brand": "Dole", "category": "Produce", "packaging_type": "Plastic" },
       { "name": "Greek Gods Greek Yogurt", "brand": "Greek Gods", "category": "Dairy", "packaging_type": "Plastic" },
       { "name": "Household Dust", "brand": "", "category": "Cleaning Products", "packaging_type": "Paper" },
@@ -679,8 +678,8 @@ export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
       { "name": "Starbucks Coffee Cup", "brand": "Starbucks", "category": "Beverages", "packaging_type": "Paper" },
       { "name": "Pink Himalayan Salt", "brand": "", "category": "Spices", "packaging_type": "Plastic" },
       { "name": "Kosher Salt", "brand": "", "category": "Spices", "packaging_type": "Plastic" },
-      {"name": "English Muffins", "brand": "", "category": "Bread", "packaging_type": "Plastic"},
-      {"name": "SodaStream Flavorings", "brand": "SodaStream", "category": "Beverages", "packaging_type": "Plastic"}
+      { "name": "English Muffins", "brand": "", "category": "Bread", "packaging_type": "Plastic" },
+      { "name": "SodaStream Flavorings", "brand": "SodaStream", "category": "Beverages", "packaging_type": "Plastic" }
     ];
 
     const shuffledRows = [...originalRows];
