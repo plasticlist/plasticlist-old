@@ -15,7 +15,12 @@ export default function Blog2WeeksPage() {
           <br />
           <div className="border bg-secondary p-4 rounded-md flex flex-col gap-2">
             <p className="font-bold">Open call for labs</p>
-            <p>To run the tests, we are looking to partner with a lab. We are looking for labs that have experience testing any of the matrices and analytes mentioned in this post.</p>
+            <p>To run the tests, we are looking to partner with a lab. We are looking for:</p>
+            <ul className="list-disc pl-5">
+              <li>Experience testing any of the matrices and analytes mentioned in this post.</li>
+              <li>Rapid turnaround time.</li>
+              <li>Ability to provide raw data on blanks (instrumental and method), standards, QC materials, and test samples.</li>
+            </ul>
             <p>If you work at or know of such a lab, please reach out to us at <a href="mailto:team@plasticlist.org" className="underline">team@plasticlist.org</a> or <a href="https://discord.gg/XqQEZAqc" target="_blank" rel="noopener noreferrer" className="underline">on Discord.</a></p>
           </div>
           <br />
@@ -45,25 +50,75 @@ export default function Blog2WeeksPage() {
           <br />
           <p>With these insights in hand, we could define a more specific scope for the project.</p>
           <br />
-          <p className="font-bold">Grouping products by matrix</p>
+          <p className="font-bold">Choosing samples</p>
           <p>We worked with an analytical chemist to group the 100 most popular products based on composition, or <a href="https://en.wikipedia.org/wiki/Matrix_(chemical_analysis)" target="_blank" rel="noopener noreferrer" className="underline">matrix</a>. For example, if we wanted to test beverages, we grouped them into matrices like "water-based," "dairy-based," and so on.</p>
-          <p>From our initial 100 most popular products, we ended up with 12 matrices:</p>
+          <p>From our initial 100 most popular products, we ended up with 12 matrices. Within each matrix, we picked samples from different brands, processing types, and packaging materials.</p>
+          <p>Here are the samples, grouped by matrix:</p>
           <ol className="list-decimal pl-5">
             <li>Water</li>
+            <ul className="list-disc pl-5">
+              <li>Filtered tap water</li>
+              <li>Unfiltered tap water from around the Bay Area</li>
+              <li>Water in a plastic bottle</li>
+              <li>Water in a glass bottle</li>
+              <li>Water after sitting in a hot car</li>
+            </ul>
             <li>Plant-based baby food</li>
+            <ul className="list-disc pl-5">
+              <li>Baby food in a glass container</li>
+              <li>Baby food in a plastic container</li>
+            </ul>
             <li>Broccoli</li>
+            <ul className="list-disc pl-5">
+              <li>Frozen broccoli from a store</li>
+              <li>Fresh broccoli from a store</li>
+              <li>Fresh broccoli from a farmers market</li>
+            </ul>
             <li>Strawberry</li>
+            <ul className="list-disc pl-5">
+              <li>Frozen strawberries from a store</li>
+              <li>Fresh strawberries from a store</li>
+              <li>Fresh strawberries from a farmers market</li>
+            </ul>
             <li>Yogurt</li>
+            <ul className="list-disc pl-5">
+              <li>Greek non-fat yogurt in a plastic container</li>
+              <li>Yogurt in a non-plastic container</li>
+            </ul>
             <li>Milk</li>
+            <ul className="list-disc pl-5">
+              <li>Whole milk</li>
+              <li>Lactose-free milk</li>
+              <li>Fresh milk from a farm</li>
+            </ul>
             <li>Poultry</li>
+            <ul className="list-disc pl-5">
+              <li>Chicken</li>
+              <li>Turkey</li>
+            </ul>
             <li>Soda and non-alcoholic beverage</li>
+            <ul className="list-disc pl-5">
+              <li>Soda</li>
+              <li>Sparkling water</li>
+              <li>Energy drink</li>
+            </ul>
             <li>Coffee</li>
+            <ul className="list-disc pl-5">
+              <li>Black coffee</li>
+            </ul>
             <li>Spreads</li>
+            <ul className="list-disc pl-5">
+              <li>Peanut butter</li>
+            </ul>
             <li>Protein shake</li>
+            <ul className="list-disc pl-5">
+              <li>Vanilla protein shake</li>
+            </ul>
             <li>Burger</li>
+            <ul className="list-disc pl-5">
+              <li>Hamburger</li>
+            </ul>
           </ol>
-          <br />
-          <p>For each matrix, we selected several product samples based on the number of votes. We picked samples from different brands, processing types, and packaging materials.</p>
           <br />
           <p className="font-bold">Choosing analytes</p>
           <p>The <a href="https://plastchem-project.org/" target="_blank" rel="noopener noreferrer" className="underline">PlastChem database</a> lists more than 20,000 plastic-related chemicals with varying levels of human exposure and health hazards. We worked with food safety experts to filter these down to 16 chemicals that 1) Americans are widely exposed to and 2) have well-researched links to adverse health effects in humans.</p>
