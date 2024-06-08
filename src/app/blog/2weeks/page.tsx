@@ -15,7 +15,7 @@ export default function Blog2WeeksPage() {
           <br />
           <div className="border bg-secondary p-4 rounded-md flex flex-col gap-2">
             <p className="font-bold">Open call for labs</p>
-            <p>To run these tests, we are looking to partner with a lab. We are looking for labs that have experience testing any of the matrices and analytes mentioned in this post.</p>
+            <p>To run the tests, we are looking to partner with a lab. We are looking for labs that have experience testing any of the matrices and analytes mentioned in this post.</p>
             <p>If you work at or know of such a lab, please reach out to us at <a href="mailto:team@plasticlist.org" className="underline">team@plasticlist.org</a> or <a href="https://discord.gg/XqQEZAqc" target="_blank" rel="noopener noreferrer" className="underline">on Discord.</a></p>
           </div>
           <br />
@@ -23,7 +23,7 @@ export default function Blog2WeeksPage() {
           <p>Plasticlist started with Nat Friedman's tweet about testing foods in California for endocrine-disrupting chemicals that leach from plastics:</p>
           <br />
           <div className="flex justify-center">
-            <Image src="/blog/nat-tweet.png" alt="Comment under Nat's tweet" width={500} height={100} />
+            <Image src="/blog/nat-tweet.png" alt="Comment under Nat's tweet" width={500} height={150} />
           </div>
           <br />
           <p>Since then, three million people have seen Nat's tweets from all around the globe. Many of them have commented asking to test products they were personally interested in.</p>
