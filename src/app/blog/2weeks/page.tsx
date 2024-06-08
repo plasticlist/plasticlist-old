@@ -21,7 +21,7 @@ export default function Blog2WeeksPage() {
               <li>Rapid turnaround time.</li>
               <li>Ability to provide raw data on blanks (instrumental and method), standards, QC materials, and test samples.</li>
             </ul>
-            <p>If you work at or know of such a lab, please reach out to us at <a href="mailto:team@plasticlist.org" className="underline">team@plasticlist.org</a> or <a href="https://discord.gg/XqQEZAqc" target="_blank" rel="noopener noreferrer" className="underline">on Discord</a>. Please read our <a href="https://docs.google.com/document/d/1r5cpA1jSbqSdYmcjECW-O-fyLg0kSMnFWmuOJfnL4gs/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="underline">scope of work</a> for more information.</p>
+            <p>If you work at or know of such a lab, please reach out to us at <a href="mailto:team@plasticlist.org" className="underline">team@plasticlist.org</a> or <a href="https://discord.gg/XqQEZAqc" target="_blank" rel="noopener noreferrer" className="underline">on Discord</a>.</p>
           </div>
           <br />
           <p className="font-bold">PlasticList origins</p>
