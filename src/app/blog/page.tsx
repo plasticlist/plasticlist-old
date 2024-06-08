@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import Link from 'next/link';
 
 export default function BlogPage() {
   return (
@@ -9,7 +10,9 @@ export default function BlogPage() {
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 items-baseline">
             <p className="text-xs text-gray-500">2024-06-07</p>
-            <a href="/blog/2weeks" className="underline">PlasticList: 2 weeks in</a>
+            <Link href="/blog/2weeks" className="underline">
+              PlasticList: 2 weeks in
+            </Link>
           </div>
         </div>
       </div>
