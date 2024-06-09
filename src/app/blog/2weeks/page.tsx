@@ -52,72 +52,31 @@ export default function Blog2WeeksPage() {
           <br />
           <p className="font-bold">Choosing samples</p>
           <p>We worked with an analytical chemist to group the 100 most popular products based on composition, or <a href="https://en.wikipedia.org/wiki/Matrix_(chemical_analysis)" target="_blank" rel="noopener noreferrer" className="underline">matrix</a>. For example, if we wanted to test beverages, we grouped them into matrices like "water-based," "dairy-based," and so on.</p>
-          <p>From our initial 100 most popular products, we ended up with 12 matrices. Within each matrix, we picked samples from different brands, processing types, and packaging materials.</p>
-          <p>Here are the samples, grouped by matrix:</p>
+          <p>Within each matrix, we picked samples from different brands, processing types, and packaging materials.</p>
+          <p>We ended up with 22 matrices:</p>
           <ol className="list-decimal pl-5">
-            <li>Water</li>
-            <ul className="list-disc pl-5">
-              <li>Filtered tap water</li>
-              <li>Unfiltered tap water from around the Bay Area</li>
-              <li>Water in a plastic bottle</li>
-              <li>Water in a glass bottle</li>
-              <li>Water after sitting in a hot car</li>
-            </ul>
-            <li>Plant-based baby food</li>
-            <ul className="list-disc pl-5">
-              <li>Baby food in a glass container</li>
-              <li>Baby food in a plastic container</li>
-            </ul>
-            <li>Broccoli</li>
-            <ul className="list-disc pl-5">
-              <li>Frozen broccoli from a store</li>
-              <li>Fresh broccoli from a store</li>
-              <li>Fresh broccoli from a farmers market</li>
-            </ul>
-            <li>Strawberry</li>
-            <ul className="list-disc pl-5">
-              <li>Frozen strawberries from a store</li>
-              <li>Fresh strawberries from a store</li>
-              <li>Fresh strawberries from a farmers market</li>
-            </ul>
-            <li>Yogurt</li>
-            <ul className="list-disc pl-5">
-              <li>Greek non-fat yogurt in a plastic container</li>
-              <li>Yogurt in a non-plastic container</li>
-            </ul>
-            <li>Milk</li>
-            <ul className="list-disc pl-5">
-              <li>Whole milk</li>
-              <li>Lactose-free milk</li>
-              <li>Fresh milk from a farm</li>
-            </ul>
-            <li>Poultry</li>
-            <ul className="list-disc pl-5">
-              <li>Chicken</li>
-              <li>Turkey</li>
-            </ul>
-            <li>Soda and non-alcoholic beverage</li>
-            <ul className="list-disc pl-5">
-              <li>Soda</li>
-              <li>Sparkling water</li>
-              <li>Energy drink</li>
-            </ul>
-            <li>Coffee</li>
-            <ul className="list-disc pl-5">
-              <li>Black coffee</li>
-            </ul>
-            <li>Spreads</li>
-            <ul className="list-disc pl-5">
-              <li>Peanut butter</li>
-            </ul>
-            <li>Protein shake</li>
-            <ul className="list-disc pl-5">
-              <li>Vanilla protein shake</li>
-            </ul>
-            <li>Burger</li>
-            <ul className="list-disc pl-5">
-              <li>Hamburger</li>
-            </ul>
+            <li><b>Water:</b> 13 products</li>
+            <li><b>Plant-based baby food:</b> 9 products</li>
+            <li><b>Meat-based baby food:</b> 2 products</li>
+            <li><b>Non-fat yogurt:</b> 3 products</li>
+            <li><b>Whole milk yogurt:</b> 2 products</li>
+            <li><b>Broccoli:</b> 5 products</li>
+            <li><b>Strawberries:</b> 5 products</li>
+            <li><b>Milk:</b> 4 products</li>
+            <li><b>Poultry:</b> 6 products</li>
+            <li><b>Soda:</b> 10 products</li>
+            <li><b>Coffee:</b> 4 products</li>
+            <li><b>Peanut butter:</b> 2 products</li>
+            <li><b>Protein shake:</b> 1 product</li>
+            <li><b>Burger:</b> 1 product</li>
+            <li><b>Bread:</b> 4 products</li>
+            <li><b>Carbonated alcohol:</b> 2 products</li>
+            <li><b>Chocolate:</b> 3 products</li>
+            <li><b>Egg:</b> 4 products</li>
+            <li><b>Fish:</b> 7 products</li>
+            <li><b>Red meat:</b> 5 products</li>
+            <li><b>Tablets:</b> 4 products</li>
+            <li><b>Wine:</b> 4 products</li>
           </ol>
           <br />
           <p className="font-bold">Choosing analytes</p>
