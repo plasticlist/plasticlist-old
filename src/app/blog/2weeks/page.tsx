@@ -54,7 +54,7 @@ export default function Blog2WeeksPage() {
           <p>Different foods have different chemical compositions and, most of the time, labs need to develop a new testing method for each food type. For example, testing water and juice requires two different methods, and so does testing nonfat and whole milk yogurt.</p>
           <p>Method development involves designing a process to isolate the target <a href="https://en.wikipedia.org/wiki/Analyte" target="_blank" rel="noopener noreferrer" className="underline">analyte</a> from the <a href="https://en.wikipedia.org/wiki/Matrix_(chemical_analysis)" target="_blank" rel="noopener noreferrer" className="underline">matrix</a>. This is usually not something you can just look up in a book; in practice, it requires careful experimentation and validation.</p>
           <p>We worked with an analytical chemist to group about 100 popular foods based on composition. For example, if we wanted to test beverages, we grouped them into matrix categories like "water-based," "dairy-based," and so on.</p>
-          <p>Within each matrix category, we picked samples from different brands, processing types, and packaging materials. We ended up with 22 matrices for our top 100 foods:</p>
+          <p>Within each matrix category, we picked samples from different brands, processing types, and packaging materials. We ended up with 11 matrices:</p>
           <ol className="list-decimal pl-5">
             <li><b>Water:</b> 22 products</li>
             <li><b>Plant-based baby food:</b> 16 products</li>
