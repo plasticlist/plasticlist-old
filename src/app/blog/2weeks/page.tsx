@@ -45,7 +45,7 @@ export default function Blog2WeeksPage() {
           <p>Note that our project is not focused on microplastics, which are little particles of plastic. Instead, we are testing for endocrine-disrupting plastic-related chemicals that can leach into foods at molecule scale during the food production process. For example, it is believed that phthalates can leach into processed foods when they pass through flexible plastic tubing during manufacturing (and especially if the foods are warm at the time).</p>
           <p className="font-bold">What foods should we test?</p>
           <p>We launched plasticlist.org on May 21st so that people can vote on which foods we should test. Over the last two weeks, 22,000 people visited PlasticList, and voted more than 7,500 times for over 700 unique products.</p>
-          <p>These votes, along with the comments on Nat's original tweet, helped us curate a list of products Bay Area techies care about the most. For example, Chobani Greek yogurt was the most popular product by far:</p>
+          <p>These votes, along with the comments on Nat's original tweet, helped us curate a list of products Bay Area techies care about the most. For example, water left in the heat was the most popular request, followed by Chobani Greek yogurt and Starbucks coffee:</p>
           <div className="flex justify-center">
             <Image src="/blog/most-upvoted-product.png" alt="Most upvoted product" width={800} height={400} />
           </div>
