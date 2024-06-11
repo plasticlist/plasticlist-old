@@ -9,9 +9,9 @@ export default function BlogPage() {
         <Header />
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 items-baseline">
-            <p className="text-xs text-gray-500">2024-06-07</p>
+            <p className="text-xs text-gray-500">2024-06-10</p>
             <Link href="/blog/2weeks" className="underline">
-              PlasticList: 2 weeks in
+              PlasticList status report
             </Link>
           </div>
         </div>
