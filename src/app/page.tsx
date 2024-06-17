@@ -2,9 +2,9 @@
 "use client";
 import { useState } from "react";
 import { IntroText } from "@/components/intro-text";
-import { PlasticList } from "@/components/plastic-list";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { BlogPosts } from "@/components/blog-posts";
 
 export default function Home() {
   const [email, setEmail] = useState<string | null>(null);
@@ -18,7 +18,7 @@ export default function Home() {
       <div className="flex flex-col gap-8">
         <Header />
         <IntroText onEmailSubmit={handleEmailSubmit} />
-        <PlasticList email={email} onEmailSubmit={handleEmailSubmit} />
+        <BlogPosts />
       </div>
       <Footer />
     </main>

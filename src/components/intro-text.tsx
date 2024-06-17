@@ -32,8 +32,13 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
         <ResearchSummary />
         <div className="border bg-secondary p-4 rounded-md flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <p><b>PlasticList</b> is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find out how much plastic chemicals are in the food, drinks, and household items we consume.</p>
-            <p>Let us know what products we should test. It may be something you eat regularly or use at home. Simply vote or add an item below.</p>
+            <p><b>PlasticList</b> is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find out which endocrine-disrupting chemicals leach into our food and drinks from plastic.</p>
+            <p>To start, we set two goals:</p>
+            <ol className="list-decimal pl-5 space-y-2">
+              <li>Test the food popular among the Bay Area tech community for endocrine-disrupting chemicals related to plastic.</li>
+              <li>Publish everything we learn along the way, so that others can evaluate, replicate, and build on our work.</li>
+            </ol>
+            <p>You can follow our progress by reading the blog posts below and subscribing.</p>
           </div>
           <SubscribeEmailForm onSubmitSuccess={onEmailSubmit} />
         </div>
