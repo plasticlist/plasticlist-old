@@ -37,7 +37,7 @@ export default function Blog2WeeksPage() {
           <p className="font-bold">Our goals</p>
           <p>We decided to make our project deliberately narrow in scope, and set two goals for ourselves:</p>
           <ol className="list-decimal pl-5 space-y-2">
-            <li>Test the food popular among the Bay Area tech community for endocrine-disrupting chemicals related to plastics.</li>
+            <li>Test the food popular among the Bay Area tech community for endocrine-disrupting chemicals related to plastic.</li>
             <li>Publish everything we learn along the way, so that others can evaluate, replicate, and build on our work.</li>
           </ol>
           <p>Maybe in the future we will test more foods, but for our first project, limiting our tests to the foods that this one community cares about is a deliberately parochial strategy. This way, at least we know that our results will be of interest to one group of people. It's also easier for us to source samples if we can just buy them locally.</p>
@@ -88,7 +88,7 @@ export default function Blog2WeeksPage() {
             <li>Do different flavors of Fairlife have different compositions of EDCs?</li>
           </ul>
           <p>We have identified two potential partner labs and are working with them to prepare and sequence the tests. Some matrices will be easier to test than others, and so we expect to receive the results from those first. Our plan is to publish the results as we get them.</p>
-          <p>In practice, the available matrices may be limited by our budget and the capabilities of the available labs. Within the list, there are a few questions we hope to explore, such as whether and to what extent different types of food containers might leach plastic chemicals into our foods.</p>
+          <p>In practice, the available matrices may be limited by our budget and the capabilities of the available labs.</p>
           <p>We are amateurs and our study will be relatively small, so we don’t expect our data to be statistically significant or to definitively answer any questions. It should be interesting, though! We’ll share more information on the specific tests we are running when we have it.</p>
           <p className="font-bold">Choosing analytes</p>
           <p>The <a href="https://plastchem-project.org/" target="_blank" rel="noopener noreferrer" className="underline">PlastChem database</a> lists more than 20,000 plastic-related chemicals with varying levels of human exposure and health hazards. We worked with food safety experts to filter these down to 16 chemicals that 1) Americans are widely exposed to and 2) have well-researched links to adverse health effects in humans.</p>

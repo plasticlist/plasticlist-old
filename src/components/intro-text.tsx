@@ -35,7 +35,7 @@ export function IntroText({ onEmailSubmit }: IntroTextProps) {
             <p><b>PlasticList</b> is <a href="https://twitter.com/natfriedman/status/1789287484515659896" className="underline">running tests</a> to find out which endocrine-disrupting chemicals leach into our food and drinks from plastic.</p>
             <p>To start, we set two goals:</p>
             <ol className="list-decimal pl-5 space-y-2">
-              <li>Test the food popular among the Bay Area tech community for endocrine-disrupting chemicals related to plastics.</li>
+              <li>Test the food popular among the Bay Area tech community for endocrine-disrupting chemicals related to plastic.</li>
               <li>Publish everything we learn along the way, so that others can evaluate, replicate, and build on our work.</li>
             </ol>
             <p>You can follow our progress by reading the blog posts below and subscribing.</p>
