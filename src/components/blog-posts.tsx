@@ -8,7 +8,7 @@ export function BlogPosts() {
       <p>In recent years there has been mounting evidence that plastic-related chemicals in our environment and particularly in our food are making their way into our bodies, and could be having health effects that we can see at an individual and maybe even a population level.</p>
       <p>A few recent pieces caught our attention:</p>
       <ul className="list-disc pl-5 space-y-2">
-        <li><a href="https://annalsofglobalhealth.org/articles/10.5334/aogh.4056" target="_blank" rel="noreferrer" className="underline">The Minderoo-Monaco Commission on Plastics and Human Health</a></li>
+        <li><a href="https://annalsofglobalhealth.org/articles/10.5334/aogh.4056" target="_blank" rel="noopener noreferrer" className="underline">The Minderoo-Monaco Commission on Plastics and Human Health</a></li>
         <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0114003" target="_blank" rel="noopener noreferrer" className="underline">Persistent Associations between Maternal Prenatal Exposure to Phthalates on Child IQ at Age 7 Years</a></li>
         <li><a href="https://www.amazon.com/Count-Down-Threatening-Reproductive-Development/dp/1982113677" target="_blank" rel="noopener noreferrer" className="underline">Count Down: How Our Modern World Is Threatening Sperm Counts, Altering Male and Female Reproductive Development, and Imperiling the Future of the Human Race</a></li>
         <li><a href="https://www.amazon.com/dp/1582437025?psc=1&ref=ppx_yo2ov_dt_b_product_details" target="_blank" rel="noopener noreferrer" className="underline">Slow Death by Rubber Duck: The Secret Danger of Everyday Things</a></li>
