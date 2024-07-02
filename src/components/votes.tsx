@@ -31,7 +31,7 @@ type RowData = {
   packaging_type?: string;
 };
 
-export function PlasticList({ email, onEmailSubmit }: PlasticListProps) {
+export function Votes({ email, onEmailSubmit }: PlasticListProps) {
   // Rerender component when emailSubmitted prop changes
   useEffect(() => { }, [email]);
 
