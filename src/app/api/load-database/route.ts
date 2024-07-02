@@ -7,17 +7,20 @@ export async function GET() {
   try {
     const filePath = path.join(process.cwd(), 'public', 'database.tsv');
     const fileContent = await fs.readFile(filePath, 'utf-8');
-
-    const requiredColumns = [
-      'product', 'category', 'country', 'packaging', 'sampleSize', 'levels',
-      'compounds', 'author', 'title', 'published', 'reporting', 'dbp', 'bbp',
-      'dehp', 'dinp', 'didp', 'dmp', 'dep', 'dibp', 'dnhp', 'dchp', 'dnop',
-      'dida', 'deha', 'dinch', 'deht', 'bpa', 'bps', 'bpf', 'serving', 'notes'
-    ];
+    
+    const getColumns = (): string[] => {
+      return [
+        'product', 'category', 'country', 'packaging', 'sampleSize', 'levels',
+        'compounds', 'author', 'title', 'published', 'reporting', 'dbp', 'bbp',
+        'dehp', 'dinp', 'didp', 'dmp', 'dep', 'dibp', 'dnhp', 'dchp', 'dnop',
+        'dida', 'deha', 'dinch', 'deht', 'bpa', 'bps', 'bpf', 'serving', 'notes'
+      ];
+    };
 
     const records = parse(fileContent, {
       delimiter: '\t',
       from_line: 3,
+      columns: getColumns(),
       skip_empty_lines: true,
     });
 
