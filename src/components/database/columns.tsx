@@ -1,25 +1,20 @@
+//columns.tsx
 "use client"
 
 import { ColumnDef } from "@tanstack/react-table"
 import React from "react"
-
-// present data: all headers left-aligned [DONE], findings cell right-aligned [DONE], color coding
-// load data: api
-// search
-// how we built the database
-// sort
-// filter
-// export as tsv
 
 export type TestResult = {
   product: string // 
   category: string
   country: string
   packaging: string
-  sampleSize: number
+  sampleSize: string
   summary: string
   compounds: string
   phthalates: number
+  phthalate_substitutes: number
+  bisphenols: number
   author: string
   title: string
   published: string
@@ -73,19 +68,20 @@ export const columns: ColumnDef<TestResult>[] = [
     cell: ({ row }) => { return <div className="w-28">{row.getValue("sampleSize")}</div> },
   },
   {
-    accessorKey: "levels",
-    header: "Levels reported (ng/serving)",
+    accessorKey: "summary",
+    header: "Summarized findings (ng/serving)",
     cell: ({ row }) => {
-      const findings = row.getValue("levels");
+      const findings = row.getValue("summary");
       if (typeof findings !== 'string') {
         return <div className="text-right w-80">Invalid data</div>;
       }
+      const splitFindings = findings.split(/(?<=phthalates|phthalate substitutes)/gi).filter(Boolean);
       return (
         <div className="text-right w-80">
-          {findings.split('\n').map((line, index, array) => (
+          {splitFindings.map((part, index) => (
             <React.Fragment key={index}>
-              {line}
-              {index < array.length - 1 && <br />}
+              {part}
+              {index < splitFindings.length - 1 && <br />}
             </React.Fragment>
           ))}
         </div>
@@ -100,15 +96,33 @@ export const columns: ColumnDef<TestResult>[] = [
       if (typeof compounds !== 'string') {
         return <div className="w-96">Invalid data</div>;
       }
-      return <div className="w-96">
-        {compounds.split('\n').map((line, index, array) => (
-          <React.Fragment key={index}>
-            {line}
-            {index < array.length - 1 && <br />}
-          </React.Fragment>
-        ))}
-      </div>;
+      const splitCompounds = compounds.split(/(?=Phthalate|Bisphenol)/gi).filter(Boolean);
+      return (
+        <div className="w-96">
+          {splitCompounds.map((part, index) => (
+            <React.Fragment key={index}>
+              {part}
+              {index < splitCompounds.length - 1 && <br />}
+            </React.Fragment>
+          ))}
+        </div>
+      );
     },
+  },
+  {
+    accessorKey: "phthalates",
+    header: "Total phthalates (ng/serving)",
+    cell: ({ row }) => { return <div className="w-52">{row.getValue("phthalates")}</div> },
+  },
+  {
+    accessorKey: "phthalate_substitutes",
+    header: "Total phthalate substitutes (ng/serving)",
+    cell: ({ row }) => { return <div className="w-72">{row.getValue("phthalate_substitutes")}</div> },
+  },
+  {
+    accessorKey: "bisphenols",
+    header: "Total bisphenols (ng/serving)",
+    cell: ({ row }) => { return <div className="w-52">{row.getValue("bisphenols")}</div> },
   },
   {
     accessorKey: "author",

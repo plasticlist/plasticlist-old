@@ -40,15 +40,15 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col justify-between gap-8">
-      <div className="flex flex-col gap-8">
-        <div className="max-w-4xl mx-auto w-full px-8">
+    <main className="min-h-screen flex flex-col justify-between gap-8 p-8">
+      <div className="flex flex-col gap-8 overflow-hidden">
+        <div className="max-w-4xl mx-auto w-full">
           <Header />
         </div>
-        <div className="max-w-4xl mx-auto w-full px-8">
+        <div className="max-w-4xl mx-auto w-full">
           <IntroText onEmailSubmit={handleEmailSubmit} />
         </div>
-        <div className="max-w-8xl mx-auto w-full px-8">
+        <div className="max-w-8xl mx-auto h-[85vh] w-full overflow-hidden">
           {error ? (
             <div className="text-red-500">Error: {error}</div>
           ) : (
@@ -61,11 +61,11 @@ export default function Home() {
         <div className="max-w-8xl mx-auto w-full px-8">
           <DatabaseIframe />
         </div> */}
-        <div className="max-w-4xl mx-auto w-full px-8">
+        <div className="max-w-4xl mx-auto w-full">
           <BlogPosts />
         </div>
       </div>
-      <div className="max-w-4xl mx-auto w-full px-8">
+      <div className="max-w-4xl mx-auto w-full">
         <Footer />
       </div>
     </main>
