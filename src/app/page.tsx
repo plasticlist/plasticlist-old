@@ -48,19 +48,6 @@ export default function Home() {
         <div className="max-w-4xl mx-auto w-full">
           <IntroText onEmailSubmit={handleEmailSubmit} />
         </div>
-        {/* <div className="max-w-8xl mx-auto h-[85vh] w-full overflow-hidden">
-          {error ? (
-            <div className="text-red-500">Error: {error}</div>
-          ) : (
-            <DataTable columns={columns} data={data} />
-          )}
-        </div> */}
-        {/* <div className="max-w-8xl mx-auto w-full px-8">
-          <DatabaseTable />
-        </div>
-        <div className="max-w-8xl mx-auto w-full px-8">
-          <DatabaseIframe />
-        </div> */}
         <div className="max-w-4xl mx-auto w-full">
           <BlogPosts />
         </div>

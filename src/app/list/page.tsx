@@ -29,7 +29,7 @@ export default function List() {
   }, []);
 
   return (
-    <main className="min-h-screen flex flex-col mx-auto p-8 justify-between gap-8">
+    <main className="min-h-screen flex flex-col justify-between gap-8 p-8">
       <div className="max-w-4xl mx-auto w-full">
         <Header />
       </div>

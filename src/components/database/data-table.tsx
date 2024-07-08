@@ -75,7 +75,7 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
 
   return (
     <div className="flex flex-col h-full">
-      <div className="flex justify-end items-center py-4">
+      <div className="flex justify-end items-center pb-4">
         <Input
           placeholder="Search..."
           value={globalFilter ?? ""}
