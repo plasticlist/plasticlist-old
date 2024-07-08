@@ -4,10 +4,6 @@ import { IntroText } from "@/components/intro-text";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { BlogPosts } from "@/components/blog-posts";
-import { DatabaseIframe } from "@/components/database-iframe";
-import { DatabaseTable } from "@/components/database-table";
-import { DataTable } from "@/components/database/data-table";
-import { columns } from "@/components/database/columns";
 import { TestResult } from "@/components/database/columns";
 
 export default function Home() {
