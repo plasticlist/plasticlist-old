@@ -36,21 +36,9 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col justify-between gap-8 p-8">
-      <div className="flex flex-col gap-8 overflow-hidden">
-        <div className="max-w-4xl mx-auto w-full">
-          <Header />
-        </div>
-        <div className="max-w-4xl mx-auto w-full">
-          <IntroText onEmailSubmit={handleEmailSubmit} />
-        </div>
-        <div className="max-w-4xl mx-auto w-full">
-          <BlogPosts />
-        </div>
-      </div>
-      <div className="max-w-4xl mx-auto w-full">
-        <Footer />
-      </div>
+    <main className="min-h-screen max-w-3xl flex flex-col mx-auto justify-between gap-12 py-12">
+      <IntroText onEmailSubmit={handleEmailSubmit} />
+      <BlogPosts />
     </main>
   );
 }

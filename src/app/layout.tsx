@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "@/styles/globals.css"
 import { Inter as FontSans } from "next/font/google"
 import { CSPostHogProvider } from './providers'
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 import { cn } from "@/lib/utils"
 
@@ -52,11 +54,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <CSPostHogProvider>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased text-sm",
+          "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
       </CSPostHogProvider>
     </html>
