@@ -3,8 +3,7 @@ import { Footer } from "@/components/footer";
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen max-w-4xl flex flex-col mx-auto p-8 justify-between gap-8">
-      <Header />
+    <div className="max-w-3xl mx-auto flex flex-col justify-between gap-8">
       <div className="flex flex-col text-sm gap-4">
         <h1 className="text-lg font-bold">Terms</h1>
         <p>Website Terms of Use</p>
@@ -28,8 +27,7 @@ export default function TermsPage() {
           If you have any questions about these Terms of Use, please contact us at team@plasticlist.app.</p>
         <p>This document was last updated on May 15, 2024.</p>
       </div>
-      <Footer />
-    </main>
+    </div>
   );
 }
 

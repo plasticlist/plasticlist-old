@@ -59,7 +59,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <Header />
-        {children}
+        <main className="min-h-screen px-4 py-4 sm:px-0 sm:py-8">
+          {children}
+        </main>
         <Footer />
       </body>
       </CSPostHogProvider>

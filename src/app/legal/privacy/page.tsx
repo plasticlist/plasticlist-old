@@ -3,8 +3,7 @@ import { Footer } from "@/components/footer";
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen max-w-4xl flex flex-col mx-auto p-8 justify-between gap-8">
-      <Header />
+    <div className="max-w-3xl mx-auto flex flex-col justify-between gap-8">
       <div className="flex flex-col text-sm gap-4">
         <h1 className="text-lg font-bold">Privacy</h1>
         <p>Website Privacy Policy</p>
@@ -62,7 +61,6 @@ export default function TermsPage() {
           If you have any questions about this Privacy Policy, please contact us at team@plasticlist.app</p>
         <p>By using our Site, you consent to our Privacy Policy.</p>
       </div>
-      <Footer />
-    </main>
+    </div>
   );
 }
